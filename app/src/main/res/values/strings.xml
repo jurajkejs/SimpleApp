@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple App</string>
+
+    <string name="title_contacts_list">Items</string>
+    <string name="title_contacts_detail">Contacts Detail</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="Splash_logo">SplashScreen</string>
+    <string name="main_logo">background_Login</string>
+
+    User menu / Uživateľské menu
+
+    <string name="etEmail">Email</string>
+    <string name="et_password">Heslo</string>
+    <string name="btMap">Mapa</string>
+    <string name="btAccount">Účet</string>
+    <string name="btLogin">Login</string>
+    <string name="btRegister">Registrovať</string>
+    <string name="background_register">RegisterActivity</string>
+
+    Registration / registrácia
+
+    <string name="regFName">Meno</string>
+    <string name="regLName">Priezvisko</string>
+    <string name="reg_Email">Email</string>
+    <string name="regPass">Heslo</string>
+    <string name="regCnfpass">Potvrdenie hesla</string>
+    <string name="registerUser">Uložiť</string>
+
+    <string name="action_menu_main">Hlavné menu</string>
+    <string name="action_Map">Mapa</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Menu_account">Kontakty</string>
+    <string name="title_activity_account">accountActivity</string>
+    <string name="item3">Kontakty</string>
+    <string name="item1">Hlavné menu</string>
+    <string name="item2">Mapa</string>
+    <string name="item4">Odhlásiť</string>
+    <string name="title_activity_contacts">Contacts</string>
+    <string name="title_home">home</string>
+
+
+    MainMenu / Hlavné menu
+
+    <string name="ContactsDetail">Kontakty</string>
+    <string name="MenuMain">Hlavné menu</string>
+    <string name="nav_header_title">Login</string>
+    <string name="nav_header_subtitle">jurajkejs@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_menu_main">menu_main</string>
+
+    ContactsDetail / Kontakty
+
+    <string name="navDetailCon_MainMenu">Hlavné menu</string>
+    <string name="navDetailCon_map">Mapa</string>
+    <string name="navDetailCon_help">Pomocník</string>
+
+    MenuMain / Hlavné menu
+
+    <string name="navMenu_main_contacts">Kontakty</string>
+    <string name="navMenu_main_mapa">Mapa</string>
+    <string name="navMenu_main_logout">Odhlásiť</string>
+    <string name="navMenu_main_version">Verzia</string>
+
+    <string name="Kontakty">Kontakty</string>
+    <string name="ic_menu_search">Hľadanie</string>
+    <string name="filer_contacts">Filter</string>
+    <string name="add_contacts">Pridať Kontakt</string>
+    <string name="item_RcTitle1">Janko Hraško</string>
+    <string name="item_RcDetail">+421900000000</string>
+
+    Mapa
+  <string name="search_in_the_map">Hľadať v mapách</string>
+  <string name="Map">Mapa</string>
+    <string name="search_contacts">Hľadať kontakty</string>
+    <string name="search">Hľadať</string>
+    <string name="Search_menu">Hľadaj_menu</string>
+
+
+</resources>

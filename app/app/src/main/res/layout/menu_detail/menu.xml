@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:centerTitle="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/Kontakty"
+        android:title="@string/item1" />
+    <item
+        android:id="@+id/Mapa"
+        android:title="@string/item2"/>
+
+    <item
+        android:id="@+id/Odhlásiť"
+        android:title="@string/item3" />
+
+
+
+</menu>

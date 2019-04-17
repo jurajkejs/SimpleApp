@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/navDetailCon_MainMenu"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/navDetailCon_MainMenu" />
+    <item
+        android:id="@+id/navDetailCon_map"
+        android:icon="@drawable/ic_map_white_24dp"
+        android:title="@string/navDetailCon_map" />
+    <item
+        android:id="@+id/navDetailCon_help"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="@string/navDetailCon_help" />
+
+
+</menu>

@@ -1,0 +1,92 @@
+plugins {
+    id("com.android.application")
+    id("kotlin-android")
+    id("kotlin-android-extensions")
+    id("kotlin-platform-android")
+}
+android {
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
+        applicationIdSuffix '.dev'
+        minSdkVersion 19
+        targetSdkVersion 28
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationIdSuffix '.dev'
+        resConfigs("en", "xxhdpi")
+        versionCode = 1
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            ext.alwaysUpdateBuildId = false
+            minifyEnabled = false
+            crunchPngs false
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    android {
+            packagingOptions {
+                exclude 'META-INF/proguard/androidx-annotations.pro'
+            }
+        }
+    android {
+        dexOptions {
+            jumboMode = true
+        }
+    }
+        dependencies {
+            //implementation("javax.xml.bind:jaxb-api:2.3.1")
+            implementation fileTree(include: ['*.jar'], dir: 'libs')
+            //noinspection GradleCompatible
+            implementation 'com.android.support:appcompat-v7:28.0.0'
+            implementation 'com.android.support:design:28.0.0'
+            implementation 'com.android.support:cardview-v7:28.0.0'
+            implementation 'com.android.support:recyclerview-v7:28.0.0'
+            implementation 'com.android.support:customtabs:28.0.0'
+            implementation 'com.android.support:support-vector-drawable:28.0.0'
+            implementation 'com.android.support:support-v4:28.0.0'
+            implementation "com.android.support:support-core-utils:28.0.0"
+            implementation "com.android.support:support-fragment:28.0.0"
+            implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+            //implementation 'com.android.support:multidex:1.0.3'
+            implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+            implementation 'com.google.android.gms:play-services-maps:16.1.0'
+            implementation 'com.google.android.gms:play-services-location:16.0.0'
+            implementation 'com.google.android.gms:play-services-places:16.0.0'
+            implementation 'com.google.android.gms:play-services-vision-image-label:17.0.2'
+            implementation 'android.arch.navigation:navigation-runtime-ktx:1.0.0'
+            implementation 'com.google.android.gms:play-services-identity:16.0.0'
+            implementation 'com.lapism:searchview:4.0'
+            //implementation 'com.jakewharton.timber:timber:4.6.0'
+            api 'com.android.support:design:28.0.0'
+            implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+            implementation('com.mikepenz:materialdrawer:5.9.5@aar') {
+                transitive = true
+
+                // AndroidJUnitRunner and JUnit Rules
+                androidTestImplementation 'com.android.support.test:runner:1.0.2'
+                androidTestImplementation 'com.android.support.test:rules:1.0.2'
+
+                // Espresso dependencies
+                androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+                androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2'
+                androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.2'
+                androidTestImplementation 'com.android.support.test.espresso:espresso-accessibility:3.0.2'
+                androidTestImplementation 'com.android.support.test.espresso.idling:idling-concurrent:3.0.2'
+                androidTestImplementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
+                testImplementation("junit:junit:4.12")
+            }
+        }
+    }
